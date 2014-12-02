@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; Markers
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown">
+                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            API Documentation <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/Webflavia.html">\Webflavia</a></li>
+                                                    </ul>
+                    </li>
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">133</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">31</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">Navigation</li>
+                                                                        <li><a href="#Entity/AbstractNavigable.php"><i class="icon-file"></i> Entity/AbstractNavigable.php</a></li>
+                                                                                                <li><a href="#Entity/Collection.php"><i class="icon-file"></i> Entity/Collection.php</a></li>
+                                                                                                <li><a href="#Entity/CollectionInterface.php"><i class="icon-file"></i> Entity/CollectionInterface.php</a></li>
+                                                                                                <li><a href="#Entity/Entity.php"><i class="icon-file"></i> Entity/Entity.php</a></li>
+                                                                                                <li><a href="#Entity/EntityInterface.php"><i class="icon-file"></i> Entity/EntityInterface.php</a></li>
+                                                                                                <li><a href="#Entity/NavigableInterface.php"><i class="icon-file"></i> Entity/NavigableInterface.php</a></li>
+                                                                                                <li><a href="#Entity/Parser.php"><i class="icon-file"></i> Entity/Parser.php</a></li>
+                                                                                                <li><a href="#Entity/ParserInterface.php"><i class="icon-file"></i> Entity/ParserInterface.php</a></li>
+                                                                                                <li><a href="#Exception/BadCredentialsException.php"><i class="icon-file"></i> Exception/BadCredentialsException.php</a></li>
+                                                                                                <li><a href="#Exception/BadMethodCallException.php"><i class="icon-file"></i> Exception/BadMethodCallException.php</a></li>
+                                                                                                <li><a href="#Exception/BadResponseException.php"><i class="icon-file"></i> Exception/BadResponseException.php</a></li>
+                                                                                                <li><a href="#Exception/ExceptionInterface.php"><i class="icon-file"></i> Exception/ExceptionInterface.php</a></li>
+                                                                                                <li><a href="#Exception/InvalidArgumentException.php"><i class="icon-file"></i> Exception/InvalidArgumentException.php</a></li>
+                                                                                                <li><a href="#Exception/InvalidJsonException.php"><i class="icon-file"></i> Exception/InvalidJsonException.php</a></li>
+                                                                                                <li><a href="#Exception/InvalidResourceException.php"><i class="icon-file"></i> Exception/InvalidResourceException.php</a></li>
+                                                                                                <li><a href="#Exception/NotFoundException.php"><i class="icon-file"></i> Exception/NotFoundException.php</a></li>
+                                                                                                <li><a href="#Exception/NotImplementedException.php"><i class="icon-file"></i> Exception/NotImplementedException.php</a></li>
+                                                                                                <li><a href="#Exception/ServerException.php"><i class="icon-file"></i> Exception/ServerException.php</a></li>
+                                                                                                <li><a href="#Exception/UnauthorizedException.php"><i class="icon-file"></i> Exception/UnauthorizedException.php</a></li>
+                                                                                                <li><a href="#Exception/ValidationFailedException.php"><i class="icon-file"></i> Exception/ValidationFailedException.php</a></li>
+                                                                                                <li><a href="#Exception/WebflaviaException.php"><i class="icon-file"></i> Exception/WebflaviaException.php</a></li>
+                                                                                                <li><a href="#Http/Client.php"><i class="icon-file"></i> Http/Client.php</a></li>
+                                                                                                <li><a href="#Http/ClientInterface.php"><i class="icon-file"></i> Http/ClientInterface.php</a></li>
+                                                                                                <li><a href="#Http/Message/Response.php"><i class="icon-file"></i> Http/Message/Response.php</a></li>
+                                                                                                <li><a href="#Http/Message/ResponseInterface.php"><i class="icon-file"></i> Http/Message/ResponseInterface.php</a></li>
+                                                                                                <li><a href="#Http/RequestInterface.php"><i class="icon-file"></i> Http/RequestInterface.php</a></li>
+                                                                                                <li><a href="#Resource/AbstractResource.php"><i class="icon-file"></i> Resource/AbstractResource.php</a></li>
+                                                                                                <li><a href="#Resource/Customer.php"><i class="icon-file"></i> Resource/Customer.php</a></li>
+                                                                                                <li><a href="#Resource/ResourceInterface.php"><i class="icon-file"></i> Resource/ResourceInterface.php</a></li>
+                                                                                                <li><a href="#Webflavia.php"><i class="icon-file"></i> Webflavia.php</a></li>
+                                                                    </ul>
+        </div>
+
+        <div class="span10 offset2">
+
+            <ul class="breadcrumb">
+                <li><a href="../"><i class="icon-map-marker"></i></a><span class="divider">\</span></li>
+                <li>Markers</li>
+            </ul>
+
+            
+            <div id="marker-accordion">
+                                                            <div class="package-contents">
+                            <a name="Entity/AbstractNavigable.php" id="Entity/AbstractNavigable.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/AbstractNavigable.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Entity/Collection.php" id="Entity/Collection.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/Collection.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Entity/CollectionInterface.php" id="Entity/CollectionInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/CollectionInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Entity/Entity.php" id="Entity/Entity.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/Entity.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>32</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Entity/EntityInterface.php" id="Entity/EntityInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/EntityInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Entity/NavigableInterface.php" id="Entity/NavigableInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/NavigableInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Entity/Parser.php" id="Entity/Parser.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/Parser.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>32</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Entity/ParserInterface.php" id="Entity/ParserInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Entity/ParserInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>31</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/BadCredentialsException.php" id="Exception/BadCredentialsException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/BadCredentialsException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/BadMethodCallException.php" id="Exception/BadMethodCallException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/BadMethodCallException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/BadResponseException.php" id="Exception/BadResponseException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/BadResponseException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/ExceptionInterface.php" id="Exception/ExceptionInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/ExceptionInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/InvalidArgumentException.php" id="Exception/InvalidArgumentException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/InvalidArgumentException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/InvalidJsonException.php" id="Exception/InvalidJsonException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/InvalidJsonException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/InvalidResourceException.php" id="Exception/InvalidResourceException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/InvalidResourceException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/NotFoundException.php" id="Exception/NotFoundException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/NotFoundException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/NotImplementedException.php" id="Exception/NotImplementedException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/NotImplementedException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/ServerException.php" id="Exception/ServerException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/ServerException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/UnauthorizedException.php" id="Exception/UnauthorizedException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/UnauthorizedException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/ValidationFailedException.php" id="Exception/ValidationFailedException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/ValidationFailedException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Exception/WebflaviaException.php" id="Exception/WebflaviaException.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Exception/WebflaviaException.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Http/Client.php" id="Http/Client.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Http/Client.php
+                                <small style="float: right;padding-right: 10px;">2</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>45</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>69</td>
+                                            <td>localhost:3000/&#039;,</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Http/ClientInterface.php" id="Http/ClientInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Http/ClientInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Http/Message/Response.php" id="Http/Message/Response.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Http/Message/Response.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Http/Message/ResponseInterface.php" id="Http/Message/ResponseInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Http/Message/ResponseInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Http/RequestInterface.php" id="Http/RequestInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Http/RequestInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Resource/AbstractResource.php" id="Resource/AbstractResource.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Resource/AbstractResource.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>32</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Resource/Customer.php" id="Resource/Customer.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Resource/Customer.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>27</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Resource/ResourceInterface.php" id="Resource/ResourceInterface.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Resource/ResourceInterface.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>29</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                                                <div class="package-contents">
+                            <a name="Webflavia.php" id="Webflavia.php"></a>
+                            <h3>
+                            <i class="icon-file"></i>
+                                Webflavia.php
+                                <small style="float: right;padding-right: 10px;">1</small>
+                            </h3>
+                            <div>
+                                <table class="table markers table-bordered">
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Line</th>
+                                        <th>Description</th>
+                                    </tr>
+                                                                            <tr>
+                                            <td></td>
+                                            <td>37</td>
+                                            <td>github.com/Webflavia/webflavia-php-sdk-v1/raw/master/LICENSE&gt; MIT</td>
+                                        </tr>
+                                                                    </table>
+                            </div>
+                        </div>
+                                                </div>
+        </div>
+    </section>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                            <li><a href="../namespaces/Webflavia.html">\Webflavia</a></li>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on December 2nd, 2014 at 14:55.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>
