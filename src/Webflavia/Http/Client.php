@@ -66,7 +66,7 @@ class Client implements ClientInterface {
    * @var mixed[]
    */
   protected $options = array(
-    'base_url' => 'https://api.webflavia.com.br/',
+    'base_url' => 'http://api.webflavia.com.br/',
     'timeout'  => 10
   );
 
