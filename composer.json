@@ -20,6 +20,6 @@
         "phpdocumentor/phpdocumentor": "~2.8"
     },
     "autoload": {
-        "psr-0": {"Webflavia\\": "src/"}
+        "psr-4": {"Webflavia\\": "src/"}
     }
 }
